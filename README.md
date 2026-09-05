@@ -11,7 +11,7 @@ is uploaded, and the app has no backend. See [cerapad.com/privacy](https://cerap
 
 | Platform | Store | Direct download |
 |---|---|---|
-| macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.0.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.0.1/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
+| macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
 | Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | [`CeraPad-x64.exe` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
 | Linux | - | not yet |
 
