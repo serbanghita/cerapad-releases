@@ -11,16 +11,18 @@ is uploaded, and the app has no backend. See [cerapad.com/privacy](https://cerap
 
 | Platform | Store | Direct download |
 |---|---|---|
-| macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg`](https://github.com/serbanghita/cerapad-releases/releases/latest/download/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
-| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | [`CeraPad-x64.exe`](https://github.com/serbanghita/cerapad-releases/releases/latest/download/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
+| macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.0.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.0.1/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
+| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | [`CeraPad-x64.exe` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
 | Linux | - | not yet |
 
 The store is the build to recommend: it updates itself. The direct download is the same app for
 whoever cannot or will not use a store account, and it does not update itself - come back here
 for a newer one.
 
-The download link above always points at the newest release. Every release carries the same
-asset name, so the URL never changes.
+Each direct-download link is pinned to a specific version, shown beside it - the two platforms are
+not always on the same one, since a build is cut per platform. Browse
+[all releases](https://github.com/serbanghita/cerapad-releases/releases) for older versions and the
+matching `.sha256`.
 
 ## CeraPad Pro
 
