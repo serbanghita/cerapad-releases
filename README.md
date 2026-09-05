@@ -4,40 +4,16 @@ Binaries for **CeraPad**, the desktop whiteboard. Source is not here; this repos
 to distribute signed builds. The web app runs at **[cerapad.com](https://cerapad.com)**, free and
 with no download.
 
-## CeraPad (free)
+## Download
 
-The whiteboard: draw, save, open, export. Boards are files on your own disk. No account, nothing
-is uploaded, and the app has no backend. See [cerapad.com/privacy](https://cerapad.com/privacy).
+| Name                     | Store                                                               | Direct download                                                                                                                                                                                                                 |
+|--------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CeraPad Free for macOS   | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
+| CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256              |
+| CeraPad Free for Linux   | -                                                                   | not yet                                                                                                                                                                                                                         |
 
-| Platform | Store | Direct download |
-|---|---|---|
-| macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
-| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | [`CeraPad-x64.exe` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
-| Linux | - | not yet |
 
-The store is the build to recommend: it updates itself. The direct download is the same app for
-whoever cannot or will not use a store account, and it does not update itself - come back here
-for a newer one.
-
-Each direct-download link is pinned to a specific version, shown beside it - the two platforms are
-not always on the same one, since a build is cut per platform. Browse
-[all releases](https://github.com/serbanghita/cerapad-releases/releases) for older versions and the
-matching `.sha256`.
-
-## CeraPad Pro
-
-Not available yet. The desktop app plus an AI assistant that can read and edit the board with you.
-It will require **your own AI CLI**: the assistant runs the
-[Claude Code](https://claude.com/claude-code) or [GitHub Copilot](https://github.com/features/copilot)
-CLI already installed on your machine and signed in to your account. CeraPad ships no API key and
-never bills you for AI, so without one of those the AI panel will not start. Everything else in
-the app works regardless.
-
-That is a deliberate design choice rather than a limitation: your AI usage bills to your own
-account, your credentials stay in your own keychain, and no CeraPad server sits between you and
-the model.
-
-## Verifying a download
+### Verifying a download
 
 Every download has a SHA-256 beside it. On macOS:
 
