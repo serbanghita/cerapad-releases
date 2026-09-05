@@ -12,7 +12,7 @@ is uploaded, and the app has no backend. See [cerapad.com/privacy](https://cerap
 | Platform | Store | Direct download |
 |---|---|---|
 | macOS | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg`](https://github.com/serbanghita/cerapad-releases/releases/latest/download/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
-| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | not yet |
+| Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr) | [`CeraPad-x64.exe`](https://github.com/serbanghita/cerapad-releases/releases/latest/download/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
 | Linux | - | not yet |
 
 The store is the build to recommend: it updates itself. The direct download is the same app for
@@ -37,7 +37,7 @@ the model.
 
 ## Verifying a download
 
-Every release publishes a SHA-256 beside the `.dmg`:
+Every download has a SHA-256 beside it. On macOS:
 
 ```
 shasum -a 256 -c CeraPad-universal.dmg.sha256
@@ -51,3 +51,12 @@ spctl --assess --type open --context context:primary-signature -vvv CeraPad-univ
 ```
 
 `source=Notarized Developer ID` is the answer you want.
+
+The Windows `.exe` is unsigned - there is no signature to check, and SmartScreen will warn on
+first run - so the SHA-256 is the check that matters. In PowerShell:
+
+```
+Get-FileHash CeraPad-x64.exe -Algorithm SHA256
+```
+
+The printed hash must match the one in `CeraPad-x64.exe.sha256`.
