@@ -8,10 +8,15 @@ with no download.
 
 | Name                     | Store                                                               | Direct download                                                                                                                                                                                                                 |
 |--------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CeraPad Free for macOS   | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
-| CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.1.0)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.0/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256              |
+| CeraPad Free for macOS   | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.1.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.1/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
+| CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.1.0 build)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.1.1/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256              |
 | CeraPad Free for Linux   | -                                                                   | not yet                                                                                                                                                                                                                         |
 
+
+**1.1.1 is a macOS-only release.** The Windows `.exe` on it is the 1.1.0 build, byte for byte,
+carried forward so the download link keeps working; the two platforms are built on different
+machines and do not always move together. Its SHA-256 is unchanged, so a checksum you saved
+before still matches.
 
 ### Verifying a download
 
