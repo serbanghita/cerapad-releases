@@ -10,9 +10,10 @@ with no download.
 |--------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CeraPad Free for macOS   | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
 | CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256    |
-| CeraPad Free for Linux   | -                                                                   | not yet                                                                                                                                                                                                             |
+| CeraPad Free for Linux   | -                                                                   | [`CeraPad-amd64.deb` (1.3.2)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.2-linux/CeraPad-amd64.deb) - Debian/Ubuntu (amd64), needs WebKitGTK 4.1 (Ubuntu 24.04 tested); GPG-signed, see below |
 | CeraPad Pro for macOS    | -                                                                   | [`CeraPad-Pro-universal.dmg` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-Pro-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
 | CeraPad Pro for Windows  | -                                                                   | [`CeraPad-Pro-x64.exe` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-Pro-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
+| CeraPad Pro for Linux    | -                                                                   | [`CeraPad-Pro-amd64.deb` (1.3.2)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.2-linux/CeraPad-Pro-amd64.deb) - Debian/Ubuntu (amd64), needs WebKitGTK 4.1 (Ubuntu 24.04 tested); GPG-signed, see below |
 
 **1.3.1 is a combined release** - both platforms were built the same day, so this tag carries both
 platforms' assets rather than being split per platform. That split still applies whenever the two
@@ -53,3 +54,27 @@ Get-FileHash CeraPad-x64.exe -Algorithm SHA256
 
 The printed hash must match the one in `CeraPad-x64.exe.sha256` (compare ignoring case). The same
 commands work for the Pro files with `CeraPad-Pro-` in the name.
+
+### Verifying a Linux download
+
+The Linux `.deb` files are signed with a detached GPG signature (`.asc`) beside each file, and carry
+a SHA-256 in `shasum` format like the others. The public key is `cerapad-release.asc` in this
+repository. Its fingerprint is:
+
+```
+6A4A CBB9 E828 1295 3232 565E 87AD 4E16 058B B1CA
+```
+
+Compare that with what `gpg` prints, then verify:
+
+```
+gpg --import cerapad-release.asc
+gpg --fingerprint 6A4ACBB9E82812953232565E87AD4E16058BB1CA
+gpg --verify CeraPad-amd64.deb.asc CeraPad-amd64.deb
+sha256sum -c CeraPad-amd64.deb.sha256
+```
+
+`Good signature from "Serban Ghita"` is the answer you want. This signs the file for download; the
+package is not part of an apt repository, so `apt` itself does not verify it on install. Install
+with `sudo apt install ./CeraPad-amd64.deb`. The same commands work for the Pro file with
+`CeraPad-Pro-` in the name (`sudo apt install "./CeraPad-Pro-amd64.deb"`).
