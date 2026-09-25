@@ -9,7 +9,7 @@ with no download.
 | Name                     | Store                                                               | Direct download                                                                                                                                                                                                     |
 |--------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CeraPad Free for macOS   | [Mac App Store](https://apps.apple.com/us/app/cerapad/id6805836944) | [`CeraPad-universal.dmg` (1.3.3)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.3/CeraPad-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
-| CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256    |
+| CeraPad Free for Windows | [Microsoft Store](https://apps.microsoft.com/detail/9pc64pc4scgr)   | [`CeraPad-x64.exe` (1.3.3)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.3/CeraPad-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256    |
 | CeraPad Free for Linux   | -                                                                   | [`CeraPad-amd64.deb` (1.3.2)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.2-linux/CeraPad-amd64.deb) - Debian/Ubuntu (amd64), needs WebKitGTK 4.1 (Ubuntu 24.04 tested); GPG-signed, see below |
 | CeraPad Pro for macOS    | -                                                                   | [`CeraPad-Pro-universal.dmg` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-Pro-universal.dmg) - universal (Apple Silicon and Intel), macOS 10.15+, signed and notarized with a Developer ID |
 | CeraPad Pro for Windows  | -                                                                   | [`CeraPad-Pro-x64.exe` (1.3.1)](https://github.com/serbanghita/cerapad-releases/releases/download/v1.3.1/CeraPad-Pro-x64.exe) - Windows 10/11 (x64); unsigned, so SmartScreen warns on first run - verify with the SHA-256 |
@@ -17,7 +17,7 @@ with no download.
 
 **Each row names its own version.** Platforms and editions ship when their build is ready rather
 than waiting for each other, so the table can list different versions side by side: free 1.3.3
-for macOS is out while Pro stays on 1.3.1 until its own 1.3.3 build. A tag never mixes assets from
+is out while Pro stays on 1.3.1 until its own 1.3.3 build. A tag never mixes assets from
 two different builds behind one version number.
 
 **CeraPad Pro is free to download and unlocked with a licence key.** It adds the AI assistant -
